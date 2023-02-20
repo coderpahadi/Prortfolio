@@ -4,7 +4,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-display: swap;
-  color: #272829;
+  color: #272829; 
+  /* background-image: linear-gradient(rgb(240, 234, 234), rgb(253, 244, 255)); */
+  background-color: whitesmoke;
 }
 
 a {
@@ -72,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
+  
 }
 
 #header .profile h1 {
@@ -208,6 +211,7 @@ h1, h2, h3, h4, h5, h6 {
   /* background: url("../img/a.jpg") top center; */
   background-color: #000;
   background-size: cover;
+  background-image: url("/back.svg");
 }
 
 /* #hero:before {
@@ -225,6 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+ 
 }
 
 #hero h1 {
@@ -232,21 +237,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #f8ebeb;
 }
 
 #hero p {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #fff;
+  color: #12ec0a;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #0073aa;
+  border-bottom: 3px solid #12ec0a;
 }
 
 @media (min-width: 1024px) {
@@ -1048,7 +1053,7 @@ section {
 
 /*show all button*/
 button.show-all {
-  background: #0073aa;
+  background: #f71699;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1056,7 +1061,9 @@ button.show-all {
   border-radius: 4px;
 }
 button.show-all:hover {
-background: #37b3ed;
+background: #fa03d1;
+font-weight: bold;
+outline: #050d18;
 }
 
 
@@ -1065,4 +1072,67 @@ background: #37b3ed;
 .back-to-top{
   left: 15px;
   right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px; 
+  
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+.img-fluid{
+  border:5px solid #0000;
+  border-radius:8px;
+  background:
+    linear-gradient(rgb(58, 233, 14),rgb(129, 6, 211)) padding-box,
+    linear-gradient(rgb(3, 229, 245),rgb(240, 5, 122)) border-box;
+}
+
+.img-fluid-1{
+  max-width: 100%;
+    height: auto;
 }
